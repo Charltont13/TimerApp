@@ -9,14 +9,15 @@ import com.example.a3200midterm.screens.LeftScreen
 import com.example.a3200midterm.screens.RightScreen
 import com.example.a3200midterm.screens.ScreenRoutes
 import com.example.a3200midterm.timers.LeftScreenViewModel
+import com.example.a3200midterm.timers.MainScreenViewModel
 import com.example.a3200midterm.timers.RightScreenViewModel
 
 @Composable
-fun Navigation(leftScreenViewModel: LeftScreenViewModel, rightScreenViewModel: RightScreenViewModel) {
+fun Navigation(leftScreenViewModel: LeftScreenViewModel, rightScreenViewModel: RightScreenViewModel, mainViewModel: MainScreenViewModel) {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = ScreenRoutes.MainScreen.route) {
         composable(route = ScreenRoutes.MainScreen.route) {
-            MainScreen(navController = navController)
+            MainScreen(navController = navController, viewModel = mainViewModel)
         }
         composable(route = ScreenRoutes.LeftScreen.route) {
 

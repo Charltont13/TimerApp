@@ -22,7 +22,9 @@ fun TimerScreen(
     val secs = seconds % 60
 
     Column(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
+        modifier = Modifier
+            .wrapContentSize() // Wrap the content instead of filling the max size
+            .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
