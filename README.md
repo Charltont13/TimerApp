@@ -6,7 +6,7 @@ This is a simple timer application built with Kotlin and Jetpack Compose for And
 ## Features
 - Two independent timers
 - Start, pause, and reset functionality for each timer
-- Clean and simple UI using custom Material You themes
+- Clean and simple UI using custom themes
 
 ## Project Structure
 - `models`: Contains data models used in the app.
